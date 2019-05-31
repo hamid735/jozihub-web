@@ -66,7 +66,7 @@ def email_account_post_activation(user_id):
         }
 
         mailer_utils.send_mail(
-            subject='Copy for basic membership application',
+            subject='Welcome to the Jozihub Community',
             html_content='email/html/post_activation_email.html',
             text_content='email/txt/post_activation_email.txt',
             context=context,
