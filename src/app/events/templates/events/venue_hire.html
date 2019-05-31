@@ -58,25 +58,25 @@
 				    
             <div class="field">
               {{ form.startdate.label_tag }}
-              <input id="id_startdate" name="startdate" type="text" placeholder="DD - MM - YYYY" {% if form.startdate.value %}value="{{ form.startdate.value }}"{% endif %}>
+              <input id="id_startdate" name="startdate" type="text" placeholder="DDMMYYYY" {% if form.startdate.value %}value="{{ form.startdate.value }}"{% endif %}>
               {{ form.startdate.errors }}
             </div>
 						
 						<div class="field">
               {{ form.starttime.label_tag }}
-              <input id="id_venuebookingstarttime" name="starttime" type="text" placeholder="H : M - AM/PM" {% if form.starttime.value %}value="{{ form.starttime.value }}"{% endif %}>
+              <input id="id_venuebookingstarttime" name="starttime" type="text" placeholder="HH:MM" {% if form.starttime.value %}value="{{ form.starttime.value }}"{% endif %}>
               {{ form.starttime.errors }}
             </div>
 						
 						<div class="field">
               {{ form.enddate.label_tag }}
-              <input id="id_enddate" name="enddate" type="text" placeholder="DD - MM - YYYY" {% if form.enddate.value %}value="{{ form.enddate.value }}"{% endif %}>
+              <input id="id_enddate" name="enddate" type="text" placeholder="DDMMYYYY" {% if form.enddate.value %}value="{{ form.enddate.value }}"{% endif %}>
               {{ form.enddate.errors }}
             </div>
 					
   					<div class="field">
               {{ form.endtime.label_tag }}
-              <input id="id_venuebookingendtime" name="endtime" type="text" placeholder="H : M - AM/PM" {% if form.endtime.value %}value="{{ form.endtime.value }}"{% endif %}>
+              <input id="id_venuebookingendtime" name="endtime" type="text" placeholder="HH:MM" {% if form.endtime.value %}value="{{ form.endtime.value }}"{% endif %}>
               {{ form.endtime.errors }}
             </div>
 						<br />

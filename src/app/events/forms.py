@@ -9,8 +9,13 @@ from app.events import tasks
 class VenueHireForm(forms.Form):
     CHOICES = [('jozihubboardroom', 'JoziHub Board Room'),
                ('jozihubmaineventspace', 'JoziHub Main Event Space')]
-    accepted_date_formats = ['%d-%m-%Y']
-    accepted_time_formats = ['%I:%M-%p',
+    accepted_date_formats = ['%d-%m-%Y',
+                             '%d/%m/%Y',
+                             '%d%m%Y']
+    accepted_time_formats = ['%H:%M',
+                             '%I:%M %p',
+                             '%I-%M %p',
+                             '%I:%M-%p',
                              '%I:%M - %p',
                              '%I : %M-%p',
                              '%I : %M - %p']
