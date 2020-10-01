@@ -1,3 +1,4 @@
+# An Amazing Project
 # JoziHub website
 ## Installation
 See [INSTALL.md](INSTALL.md) to get a development server up and running.
